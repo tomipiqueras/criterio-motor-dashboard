@@ -77,7 +77,7 @@ export default function App() {
   const [tab, setTab] = useState("patentamientos");
   const [rankingTipo, setRankingTipo] = useState("autos");
   const [moneda, setMoneda] = useState("pesos");
-  const { patentamientos: patentamientosMensuales, rankingReal, totalAutos, variacionAnual, source, isReal, anioActual } = usePatentamientos();
+  const { patentamientos: patentamientosMensuales, rankingReal, totalAutos, totalMotos, variacionAnual, source, isReal, anioActual } = usePatentamientos();
 
   const tabs = [
     { id: "patentamientos", label: "Patentamientos", icon: BarChart2 },

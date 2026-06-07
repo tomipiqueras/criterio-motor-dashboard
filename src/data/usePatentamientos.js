@@ -32,5 +32,7 @@ export function usePatentamientos() {
 
   const isReal = source !== "mock" && source !== "cache";
 
-  return { patentamientos, rankingReal, totalAutos, variacionAnual, source, isReal, anioActual };
+  const totalMotos = kpis.totalMotosAnio;
+
+  return { patentamientos, rankingReal, totalAutos, totalMotos, variacionAnual: variacionAnual ?? kpis.variacionAnual, source, isReal, anioActual };
 }
