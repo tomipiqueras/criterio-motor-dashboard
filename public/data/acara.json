@@ -1,0 +1,85 @@
+{
+  "source": "reference-2024",
+  "fetchedAt": "2026-06-07T01:16:27.940Z",
+  "anio": 2026,
+  "warnings": [
+    "ACARA scraping obtuvo menos de 3 meses — posible cambio en el sitio"
+  ],
+  "patentamientos": [
+    {
+      "mes": 1,
+      "label": "Ene 24",
+      "autos": 28450,
+      "motos": 52300
+    },
+    {
+      "mes": 2,
+      "label": "Feb 24",
+      "autos": 31200,
+      "motos": 48700
+    },
+    {
+      "mes": 3,
+      "label": "Mar 24",
+      "autos": 35600,
+      "motos": 61200
+    },
+    {
+      "mes": 4,
+      "label": "Abr 24",
+      "autos": 29800,
+      "motos": 55400
+    },
+    {
+      "mes": 5,
+      "label": "May 24",
+      "autos": 33100,
+      "motos": 58900
+    },
+    {
+      "mes": 6,
+      "label": "Jun 24",
+      "autos": 30500,
+      "motos": 47600
+    },
+    {
+      "mes": 7,
+      "label": "Jul 24",
+      "autos": 27900,
+      "motos": 43800
+    },
+    {
+      "mes": 8,
+      "label": "Ago 24",
+      "autos": 32400,
+      "motos": 56100
+    },
+    {
+      "mes": 9,
+      "label": "Sep 24",
+      "autos": 36800,
+      "motos": 62500
+    },
+    {
+      "mes": 10,
+      "label": "Oct 24",
+      "autos": 38200,
+      "motos": 67300
+    },
+    {
+      "mes": 11,
+      "label": "Nov 24",
+      "autos": 40100,
+      "motos": 71200
+    },
+    {
+      "mes": 12,
+      "label": "Dic 24",
+      "autos": 37500,
+      "motos": 65800
+    }
+  ],
+  "totalAutos": 401550,
+  "totalMotos": 690800,
+  "historico": {}
+}

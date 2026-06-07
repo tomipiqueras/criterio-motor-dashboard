@@ -1,0 +1,84 @@
+{
+  "source": "infobae-acara",
+  "fetchedAt": "2026-06-07T01:21:38.939Z",
+  "anioActual": 2026,
+  "mensual": [
+    {
+      "año": 2025,
+      "mes": 8,
+      "label": "Ago 25",
+      "totalAutos": 12355,
+      "variacionInteranual": null,
+      "topModelos": [
+        {
+          "modelo": "Si las proyecciones del sector se cumplen",
+          "ventas": 300
+        },
+        {
+          "modelo": "El mercado local mostró una clara inclinación hacia los híbridos",
+          "ventas": 2517
+        },
+        {
+          "modelo": "Más atrás en el ranking se ubicaron modelos de distintas gamas",
+          "ventas": 274
+        }
+      ],
+      "fuente": "https://www.infobae.com/economia/2025/09/07/en-el-primer-semestre-crecio-56-el-patentamiento-de-autos-hibridos-y-electricos/"
+    },
+    {
+      "año": 2026,
+      "mes": 4,
+      "label": "Abr 26",
+      "totalAutos": 49200,
+      "variacionInteranual": 5.7,
+      "topModelos": [
+        {
+          "modelo": "En el ranking de marcas",
+          "ventas": 6691
+        },
+        {
+          "modelo": "El segundo lugar quedó para Volkswagen",
+          "ventas": 2025
+        },
+        {
+          "modelo": "Fiat ocupó el tercer puesto con 5",
+          "ventas": 3862
+        },
+        {
+          "modelo": "Detrás aparecieron Chevrolet",
+          "ventas": 2976
+        },
+        {
+          "modelo": "El octavo lugar correspondió a Citro",
+          "ventas": 1137
+        },
+        {
+          "modelo": "Toyota Hilux",
+          "ventas": 2346
+        },
+        {
+          "modelo": "Peugeot 208",
+          "ventas": 1819
+        },
+        {
+          "modelo": "Ford Territory",
+          "ventas": 1570
+        },
+        {
+          "modelo": "Ford Ranger",
+          "ventas": 1437
+        },
+        {
+          "modelo": "Fiat Cronos",
+          "ventas": 1436
+        }
+      ],
+      "fuente": "https://www.infobae.com/economia/2026/05/01/abril-cerro-con-una-caida-de-14-en-los-patentamientos-de-autos-0-km-cuales-fueron-los-10-modelos-mas-vendidos/"
+    }
+  ],
+  "resumenAnio": {
+    "año": 2026,
+    "totalAutos": 49200,
+    "mesesDisponibles": 1
+  }
+}

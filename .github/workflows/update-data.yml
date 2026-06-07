@@ -1,0 +1,63 @@
+name: Actualizar datos patentamientos
+
+on:
+  # Día 5 de cada mes a las 13:00 UTC (10:00 Argentina)
+  # Infobae publica los datos de ACARA los primeros días del mes siguiente
+  schedule:
+    - cron: "0 13 5 * *"
+
+  # Ejecución manual desde GitHub (útil para forzar una actualización)
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Instalar Chromium para Puppeteer
+        run: npx puppeteer browsers install chrome
+
+      - name: Scraping de datos
+        run: node scripts/scrape-data.mjs
+
+      - name: Verificar si hubo cambios
+        id: changes
+        run: |
+          if git diff --quiet public/data/patentamientos.json 2>/dev/null || [ ! -f public/data/patentamientos.json ]; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit y push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/patentamientos.json
+          git commit -m "data: patentamientos $(date +'%Y-%m')"
+          git push
+
+      - name: Resumen
+        run: |
+          if [ -f public/data/patentamientos.json ]; then
+            node -e "
+              const d = JSON.parse(require('fs').readFileSync('public/data/patentamientos.json','utf8'));
+              console.log('Fuente:', d.source);
+              console.log('Meses total:', d.mensual.length);
+              console.log('Año actual:', d.anioActual);
+              console.log('Total autos:', d.resumenAnio.totalAutos.toLocaleString('es-AR'));
+            "
+          fi
