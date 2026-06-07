@@ -77,7 +77,7 @@ export default function App() {
   const [tab, setTab] = useState("patentamientos");
   const [rankingTipo, setRankingTipo] = useState("autos");
   const [moneda, setMoneda] = useState("pesos");
-  const { patentamientos: patentamientosMensuales, rankingReal, totalAutos, totalMotos, variacionAnual, source, isReal, anioActual } = usePatentamientos();
+  const { patentamientos: patentamientosMensuales, rankingReal, rankingMesLabel, totalAutos, totalMotos, variacionAnual, source, isReal, anioActual } = usePatentamientos();
 
   const tabs = [
     { id: "patentamientos", label: "Patentamientos", icon: BarChart2 },
@@ -148,7 +148,7 @@ export default function App() {
                   <CartesianGrid strokeDasharray="3 3" stroke={C.border} />
                   <XAxis dataKey="mes" tick={{ fontSize: 12, fill: C.muted }} axisLine={false} tickLine={false} />
                   <YAxis tick={{ fontSize: 11, fill: C.muted }} axisLine={false} tickLine={false} tickFormatter={(v) => `${(v/1000).toFixed(0)}k`} />
-                  <Tooltip {...tooltipStyle} formatter={(v, n) => [fmtNum(v), n === "autos" ? "Autos" : "Motos"]} />
+                  <Tooltip {...tooltipStyle} formatter={(v) => [fmtNum(v)]} />
                   <Legend wrapperStyle={{ color: C.muted, fontSize: 13 }} />
                   <Area type="monotone" dataKey="autos" name="Autos" stroke={C.orange} fill="url(#gA)" strokeWidth={2} dot={{ r: 3, fill: C.orange }} />
                   <Area type="monotone" dataKey="motos" name="Motos" stroke={C.white}  fill="url(#gM)" strokeWidth={2} dot={{ r: 3, fill: C.white }} />
@@ -172,7 +172,7 @@ export default function App() {
                   ))}
                 </div>
               </div>
-              <p style={{ margin: "0 0 24px", fontSize: 13, color: C.muted }}>Top 10 modelos más vendidos</p>
+              <p style={{ margin: "0 0 24px", fontSize: 13, color: C.muted }}>Top 10 modelos más vendidos{rankingMesLabel && isReal ? ` · ${rankingMesLabel}` : ""}</p>
               <ResponsiveContainer width="100%" height={380}>
                 <BarChart data={rankingTipo === "autos" ? (isReal ? rankingReal : rankingAutos) : rankingMotos} layout="vertical" margin={{ left: 20 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke={C.border} horizontal={false} />

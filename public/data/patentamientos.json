@@ -1,84 +1,221 @@
 {
-  "source": "infobae-acara",
-  "fetchedAt": "2026-06-07T01:21:38.939Z",
+  "source": "autotest-infobae-acara",
+  "fetchedAt": "2026-06-07T00:00:00.000Z",
   "anioActual": 2026,
   "mensual": [
     {
-      "año": 2025,
-      "mes": 8,
-      "label": "Ago 25",
-      "totalAutos": 12355,
-      "variacionInteranual": null,
+      "año": 2025, "mes": 2, "label": "Feb 25",
+      "totalAutos": 42918, "variacionInteranual": 71.3,
       "topModelos": [
-        {
-          "modelo": "Si las proyecciones del sector se cumplen",
-          "ventas": 300
-        },
-        {
-          "modelo": "El mercado local mostró una clara inclinación hacia los híbridos",
-          "ventas": 2517
-        },
-        {
-          "modelo": "Más atrás en el ranking se ubicaron modelos de distintas gamas",
-          "ventas": 274
-        }
+        { "modelo": "Fiat Cronos", "ventas": 2872 },
+        { "modelo": "Peugeot 208", "ventas": 2753 },
+        { "modelo": "Toyota Hilux", "ventas": 2418 },
+        { "modelo": "Volkswagen Amarok", "ventas": 2047 },
+        { "modelo": "Toyota Yaris", "ventas": 1646 },
+        { "modelo": "Volkswagen Taos", "ventas": 1612 },
+        { "modelo": "Chevrolet Tracker", "ventas": 1264 },
+        { "modelo": "Toyota Corolla Cross", "ventas": 1185 }
       ],
-      "fuente": "https://www.infobae.com/economia/2025/09/07/en-el-primer-semestre-crecio-56-el-patentamiento-de-autos-hibridos-y-electricos/"
+      "fuente": "https://autotest.com.ar/noticias/el-fiat-cronos-patentamientos-febrero-modelos-mas-vendidos/"
     },
     {
-      "año": 2026,
-      "mes": 4,
-      "label": "Abr 26",
-      "totalAutos": 49200,
-      "variacionInteranual": 5.7,
+      "año": 2025, "mes": 3, "label": "Mar 25",
+      "totalAutos": 47147, "variacionInteranual": 81.6,
       "topModelos": [
-        {
-          "modelo": "En el ranking de marcas",
-          "ventas": 6691
-        },
-        {
-          "modelo": "El segundo lugar quedó para Volkswagen",
-          "ventas": 2025
-        },
-        {
-          "modelo": "Fiat ocupó el tercer puesto con 5",
-          "ventas": 3862
-        },
-        {
-          "modelo": "Detrás aparecieron Chevrolet",
-          "ventas": 2976
-        },
-        {
-          "modelo": "El octavo lugar correspondió a Citro",
-          "ventas": 1137
-        },
-        {
-          "modelo": "Toyota Hilux",
-          "ventas": 2346
-        },
-        {
-          "modelo": "Peugeot 208",
-          "ventas": 1819
-        },
-        {
-          "modelo": "Ford Territory",
-          "ventas": 1570
-        },
-        {
-          "modelo": "Ford Ranger",
-          "ventas": 1437
-        },
-        {
-          "modelo": "Fiat Cronos",
-          "ventas": 1436
-        }
+        { "modelo": "Toyota Hilux", "ventas": 2715 },
+        { "modelo": "Fiat Cronos", "ventas": 2598 },
+        { "modelo": "Toyota Yaris", "ventas": 2465 },
+        { "modelo": "Peugeot 208", "ventas": 2271 },
+        { "modelo": "Volkswagen Taos", "ventas": 1826 },
+        { "modelo": "Ford Ranger", "ventas": 1974 },
+        { "modelo": "Volkswagen Amarok", "ventas": 1786 },
+        { "modelo": "Ford Territory", "ventas": 1636 },
+        { "modelo": "Chevrolet Tracker", "ventas": 1419 }
       ],
-      "fuente": "https://www.infobae.com/economia/2026/05/01/abril-cerro-con-una-caida-de-14-en-los-patentamientos-de-autos-0-km-cuales-fueron-los-10-modelos-mas-vendidos/"
+      "fuente": "https://autotest.com.ar/noticias/toyota-hilux-patentamientos-marzo-modelos-mas-vendidos/"
+    },
+    {
+      "año": 2025, "mes": 4, "label": "Abr 25",
+      "totalAutos": 55025, "variacionInteranual": null,
+      "topModelos": [],
+      "fuente": "inferido de comparativa abril 2026 (autotest)"
+    },
+    {
+      "año": 2025, "mes": 5, "label": "May 25",
+      "totalAutos": 56345, "variacionInteranual": null,
+      "topModelos": [],
+      "fuente": "inferido de comparativa mayo 2026 (autotest)"
+    },
+    {
+      "año": 2025, "mes": 6, "label": "Jun 25",
+      "totalAutos": 52212, "variacionInteranual": 68.9,
+      "topModelos": [
+        { "modelo": "Fiat Cronos", "ventas": 2872 },
+        { "modelo": "Toyota Yaris", "ventas": 2797 },
+        { "modelo": "Volkswagen Polo", "ventas": 2316 },
+        { "modelo": "Toyota Hilux", "ventas": 2224 },
+        { "modelo": "Ford Ranger", "ventas": 2091 },
+        { "modelo": "Toyota Corolla Cross", "ventas": 1808 },
+        { "modelo": "Chevrolet Tracker", "ventas": 1640 }
+      ],
+      "fuente": "https://autotest.com.ar/noticias/cronos-hilux-corolla-cross-segmentos-junio-cifras-patentamientos/"
+    },
+    {
+      "año": 2025, "mes": 7, "label": "Jul 25",
+      "totalAutos": 62123, "variacionInteranual": 44.0,
+      "topModelos": [
+        { "modelo": "Toyota Yaris", "ventas": 3641 },
+        { "modelo": "Fiat Cronos", "ventas": 3113 },
+        { "modelo": "Toyota Hilux", "ventas": 2529 },
+        { "modelo": "Peugeot 208", "ventas": 2414 },
+        { "modelo": "Ford Ranger", "ventas": 2418 },
+        { "modelo": "Volkswagen Amarok", "ventas": 2339 },
+        { "modelo": "Toyota Corolla Cross", "ventas": 2216 },
+        { "modelo": "Peugeot 2008", "ventas": 1798 },
+        { "modelo": "Chevrolet Tracker", "ventas": 1720 }
+      ],
+      "fuente": "https://autotest.com.ar/noticias/toyota-mercado-autos-pick-ups-julio-modelos-mas-vendidos-mes/"
+    },
+    {
+      "año": 2025, "mes": 8, "label": "Ago 25",
+      "totalAutos": 54664, "variacionInteranual": 31.7,
+      "topModelos": [
+        { "modelo": "Toyota Yaris", "ventas": 3781 },
+        { "modelo": "Fiat Cronos", "ventas": 2238 },
+        { "modelo": "Toyota Hilux", "ventas": 2375 },
+        { "modelo": "Volkswagen Polo", "ventas": 2109 },
+        { "modelo": "Volkswagen Amarok", "ventas": 2367 },
+        { "modelo": "Ford Ranger", "ventas": 2166 },
+        { "modelo": "Toyota Corolla Cross", "ventas": 2011 },
+        { "modelo": "Chevrolet Tracker", "ventas": 1487 },
+        { "modelo": "Peugeot 2008", "ventas": 1451 }
+      ],
+      "fuente": "https://autotest.com.ar/noticias/toyota-no-para-agosto-mercado-yaris-hilux/"
+    },
+    {
+      "año": 2025, "mes": 9, "label": "Sep 25",
+      "totalAutos": 55827, "variacionInteranual": 27.8,
+      "topModelos": [
+        { "modelo": "Toyota Yaris", "ventas": 3037 },
+        { "modelo": "Toyota Hilux", "ventas": 2499 },
+        { "modelo": "Fiat Cronos", "ventas": 2077 },
+        { "modelo": "Ford Ranger", "ventas": 2211 },
+        { "modelo": "Volkswagen Amarok", "ventas": 2006 },
+        { "modelo": "Peugeot 208", "ventas": 1723 }
+      ],
+      "fuente": "https://autotest.com.ar/noticias/toyota-mercado-autos-septiembre-modelos-mas-vendidos/"
+    },
+    {
+      "año": 2025, "mes": 10, "label": "Oct 25",
+      "totalAutos": 51982, "variacionInteranual": 16.9,
+      "topModelos": [],
+      "fuente": "https://autotest.com.ar/noticias/estos-fueron-los-suv-mas-vendidos-del-mes-que-modelo-finalizara-2025-como-lider-del-segmento/"
+    },
+    {
+      "año": 2025, "mes": 11, "label": "Nov 25",
+      "totalAutos": 34905, "variacionInteranual": -3.6,
+      "topModelos": [
+        { "modelo": "Toyota Hilux", "ventas": 1831 },
+        { "modelo": "Peugeot 208", "ventas": 1343 },
+        { "modelo": "Volkswagen Tera", "ventas": 1327 },
+        { "modelo": "Fiat Cronos", "ventas": 1261 },
+        { "modelo": "Toyota Yaris", "ventas": 1256 },
+        { "modelo": "Ford Ranger", "ventas": 1215 },
+        { "modelo": "Ford Territory", "ventas": 1065 },
+        { "modelo": "Volkswagen Amarok", "ventas": 916 },
+        { "modelo": "Chevrolet Tracker", "ventas": 907 }
+      ],
+      "fuente": "https://autotest.com.ar/noticias/toyota-hilux-lidero-el-mercado-en-noviembre-cuales-fueron-los-modelos-mas-vendidos/"
+    },
+    {
+      "año": 2026, "mes": 1, "label": "Ene 26",
+      "totalAutos": 66080, "variacionInteranual": -5.0,
+      "topModelos": [
+        { "modelo": "Toyota Hilux", "ventas": 3403 },
+        { "modelo": "Fiat Cronos", "ventas": 3215 },
+        { "modelo": "Peugeot 208", "ventas": 2887 },
+        { "modelo": "Ford Territory", "ventas": 2864 },
+        { "modelo": "Ford Ranger", "ventas": 2482 },
+        { "modelo": "Volkswagen Tera", "ventas": 2187 },
+        { "modelo": "Volkswagen Amarok", "ventas": 2185 },
+        { "modelo": "Chevrolet Tracker", "ventas": 1905 },
+        { "modelo": "Fiat Toro", "ventas": 801 },
+        { "modelo": "Fiat Strada", "ventas": 726 }
+      ],
+      "fuente": "https://autotest.com.ar/noticias/toyota-hilux-la-mas-vendida-cuales-fueron-los-modelos-mas-exitosos-de-enero-2026/"
+    },
+    {
+      "año": 2026, "mes": 2, "label": "Feb 26",
+      "totalAutos": 42026, "variacionInteranual": -5.7,
+      "topModelos": [
+        { "modelo": "Toyota Hilux", "ventas": 2212 },
+        { "modelo": "Peugeot 208", "ventas": 1915 },
+        { "modelo": "Fiat Cronos", "ventas": 2026 },
+        { "modelo": "Ford Territory", "ventas": 1550 },
+        { "modelo": "Ford Ranger", "ventas": 1338 },
+        { "modelo": "Volkswagen Tera", "ventas": 1333 },
+        { "modelo": "Volkswagen Polo", "ventas": 1096 },
+        { "modelo": "Chevrolet Tracker", "ventas": 1082 },
+        { "modelo": "Chevrolet Onix", "ventas": 935 },
+        { "modelo": "Peugeot 2008", "ventas": 967 }
+      ],
+      "fuente": "https://autotest.com.ar/noticias/baja-de-patentamientos-en-febrero-que-modelo-lidero-el-mercado-y-cual-fue-la-marca-mas-vendida-del-mes/"
+    },
+    {
+      "año": 2026, "mes": 3, "label": "Mar 26",
+      "totalAutos": 48972, "variacionInteranual": 1.2,
+      "topModelos": [
+        { "modelo": "Peugeot 208", "ventas": 2245 },
+        { "modelo": "Toyota Hilux", "ventas": 2194 },
+        { "modelo": "Fiat Cronos", "ventas": 1760 },
+        { "modelo": "Ford Ranger", "ventas": 1629 },
+        { "modelo": "Chevrolet Onix", "ventas": 1415 },
+        { "modelo": "Ford Territory", "ventas": 1380 },
+        { "modelo": "Volkswagen Tera", "ventas": 1251 },
+        { "modelo": "Chevrolet Tracker", "ventas": 1233 },
+        { "modelo": "Volkswagen Amarok", "ventas": 1182 },
+        { "modelo": "Volkswagen Taos", "ventas": 1173 }
+      ],
+      "fuente": "https://autotest.com.ar/noticias/marzo-por-marca-y-modelo-cuales-fueron-los-vehiculos-mas-vendidos-del-mercado/"
+    },
+    {
+      "año": 2026, "mes": 4, "label": "Abr 26",
+      "totalAutos": 47564, "variacionInteranual": -13.6,
+      "topModelos": [
+        { "modelo": "Toyota Hilux", "ventas": 2346 },
+        { "modelo": "Peugeot 208", "ventas": 1819 },
+        { "modelo": "Ford Territory", "ventas": 1680 },
+        { "modelo": "Ford Ranger", "ventas": 1437 },
+        { "modelo": "Fiat Cronos", "ventas": 1436 },
+        { "modelo": "Volkswagen Tera", "ventas": 1315 },
+        { "modelo": "Chevrolet Tracker", "ventas": 1209 },
+        { "modelo": "Chevrolet Onix", "ventas": 1176 },
+        { "modelo": "Volkswagen Amarok", "ventas": 1116 },
+        { "modelo": "Toyota Yaris Cross", "ventas": 1109 }
+      ],
+      "fuente": "https://autotest.com.ar/noticias/el-invicto-de-toyota-el-fenomeno-territory-y-el-avance-de-byd-que-paso-con-las-ventas-de-abril/"
+    },
+    {
+      "año": 2026, "mes": 5, "label": "May 26",
+      "totalAutos": 41921, "variacionInteranual": -25.6,
+      "topModelos": [
+        { "modelo": "Toyota Hilux", "ventas": 2309 },
+        { "modelo": "Ford Ranger", "ventas": 1672 },
+        { "modelo": "Fiat Cronos", "ventas": 1627 },
+        { "modelo": "Ford Territory", "ventas": 1589 },
+        { "modelo": "Peugeot 208", "ventas": 1279 },
+        { "modelo": "Volkswagen Amarok", "ventas": 1172 },
+        { "modelo": "Chevrolet Onix", "ventas": 1156 },
+        { "modelo": "Toyota Yaris Cross", "ventas": 1034 },
+        { "modelo": "Chevrolet Tracker", "ventas": 1006 },
+        { "modelo": "Volkswagen Tera", "ventas": 987 }
+      ],
+      "fuente": "https://autotest.com.ar/noticias/toyota-hilux-volvio-a-liderar-el-mercado-asi-quedo-el-ranking-de-autos-y-pick-ups-en-mayo/"
     }
   ],
   "resumenAnio": {
     "año": 2026,
-    "totalAutos": 49200,
-    "mesesDisponibles": 1
+    "totalAutos": 246563,
+    "mesesDisponibles": 5
   }
 }

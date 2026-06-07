@@ -14,25 +14,47 @@ export function usePatentamientos() {
 
   const anioActual = data?.anioActual ?? new Date().getFullYear();
 
-  // Convertir a formato { mes, autos, motos } para los gráficos
-  const patentamientos =
+  // Últimos 12 meses disponibles para el gráfico
+  const ultimos12 =
     data?.mensual
-      ?.filter((r) => r.año === anioActual)
+      ?.slice(-12)
       .map((r) => ({ mes: r.label, autos: r.totalAutos, motos: 0 })) ??
     patentamientosMensuales;
 
-  // Ranking real del mes más reciente disponible
-  const ultimoMes = data?.mensual?.[data.mensual.length - 1];
-  const rankingReal =
-    ultimoMes?.topModelos?.map((m) => ({ modelo: m.modelo, ventas: m.ventas, marca: m.modelo.split(" ")[0] })) ??
-    rankingAutos;
+  // Ranking del mes más reciente con top modelos disponibles
+  const ultimoConRanking = data?.mensual
+    ?.slice()
+    .reverse()
+    .find((r) => r.topModelos?.length > 0);
 
-  const totalAutos = data?.resumenAnio?.totalAutos ?? kpis.totalPatentamientosAnio;
+  const rankingReal =
+    ultimoConRanking?.topModelos?.map((m) => ({
+      modelo: m.modelo,
+      ventas: m.ventas,
+      marca: m.modelo.split(" ")[0],
+    })) ?? rankingAutos;
+
+  const rankingMesLabel = ultimoConRanking?.label ?? "";
+
+  // KPIs del año actual
+  const mensualAnio = data?.mensual?.filter((r) => r.año === anioActual) ?? [];
+  const totalAutos = mensualAnio.reduce((s, r) => s + r.totalAutos, 0) || kpis.totalPatentamientosAnio;
+  const totalMotos = kpis.totalMotosAnio;
+
+  const ultimoMes = data?.mensual?.[data.mensual.length - 1];
   const variacionAnual = ultimoMes?.variacionInteranual ?? kpis.variacionAnual;
 
   const isReal = source !== "mock" && source !== "cache";
 
-  const totalMotos = kpis.totalMotosAnio;
-
-  return { patentamientos, rankingReal, totalAutos, totalMotos, variacionAnual: variacionAnual ?? kpis.variacionAnual, source, isReal, anioActual };
+  return {
+    patentamientos: ultimos12,
+    rankingReal,
+    rankingMesLabel,
+    totalAutos,
+    totalMotos,
+    variacionAnual: variacionAnual ?? kpis.variacionAnual,
+    source,
+    isReal,
+    anioActual,
+  };
 }
