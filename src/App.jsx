@@ -77,7 +77,13 @@ export default function App() {
   const [tab, setTab] = useState("patentamientos");
   const [rankingTipo, setRankingTipo] = useState("autos");
   const [moneda, setMoneda] = useState("pesos");
-  const { patentamientos: patentamientosMensuales, rankingReal, rankingMesLabel, totalAutos, totalMotos, variacionAnual, source, isReal, anioActual } = usePatentamientos();
+  const {
+    patentamientos: patentamientosMensuales,
+    rankingAutosReal, rankingAutosMes,
+    rankingMotosReal, rankingMotosMes,
+    totalAutos, totalMotos,
+    variacionAnual, source, isReal, anioActual,
+  } = usePatentamientos();
 
   const tabs = [
     { id: "patentamientos", label: "Patentamientos", icon: BarChart2 },
@@ -172,9 +178,13 @@ export default function App() {
                   ))}
                 </div>
               </div>
-              <p style={{ margin: "0 0 24px", fontSize: 13, color: C.muted }}>Top 10 modelos más vendidos{rankingMesLabel && isReal ? ` · ${rankingMesLabel}` : ""}</p>
+              <p style={{ margin: "0 0 24px", fontSize: 13, color: C.muted }}>
+                {rankingTipo === "autos"
+                  ? `Top 10 modelos más vendidos${rankingAutosMes && isReal ? ` · ${rankingAutosMes}` : ""}`
+                  : `Top 5 modelos más vendidos${rankingMotosMes && isReal ? ` · ${rankingMotosMes}` : ""}`}
+              </p>
               <ResponsiveContainer width="100%" height={380}>
-                <BarChart data={rankingTipo === "autos" ? (isReal ? rankingReal : rankingAutos) : rankingMotos} layout="vertical" margin={{ left: 20 }}>
+                <BarChart data={rankingTipo === "autos" ? (isReal ? rankingAutosReal : rankingAutos) : (isReal ? rankingMotosReal : rankingMotos)} layout="vertical" margin={{ left: 20 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke={C.border} horizontal={false} />
                   <XAxis type="number" tick={{ fontSize: 11, fill: C.muted }} axisLine={false} tickLine={false} tickFormatter={(v) => `${(v/1000).toFixed(0)}k`} />
                   <YAxis type="category" dataKey="modelo" tick={{ fontSize: 11, fill: C.text }} width={165} axisLine={false} tickLine={false} />

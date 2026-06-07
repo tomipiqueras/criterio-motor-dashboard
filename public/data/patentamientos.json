@@ -1,12 +1,30 @@
 {
-  "source": "autotest-infobae-acara",
+  "source": "autotest-infobae-lamoto-acara",
   "fetchedAt": "2026-06-07T00:00:00.000Z",
   "anioActual": 2026,
   "mensual": [
     {
+      "año": 2025, "mes": 1, "label": "Ene 25",
+      "totalAutos": 68988, "totalMotos": 59252, "variacionInteranual": 103.4,
+      "topModelosAutos": [
+        { "modelo": "Peugeot 208", "ventas": 5258 },
+        { "modelo": "Fiat Cronos", "ventas": 4284 },
+        { "modelo": "Volkswagen Amarok", "ventas": 3664 },
+        { "modelo": "Ford Ranger", "ventas": 3634 },
+        { "modelo": "Toyota Hilux", "ventas": 3418 },
+        { "modelo": "Volkswagen Polo", "ventas": 2434 },
+        { "modelo": "Toyota Corolla Cross", "ventas": 2644 },
+        { "modelo": "Peugeot 2008", "ventas": 2261 },
+        { "modelo": "Chevrolet Tracker", "ventas": 2018 },
+        { "modelo": "Toyota Yaris", "ventas": 2029 }
+      ],
+      "topModelosMotos": [],
+      "fuente": "autotest.com.ar"
+    },
+    {
       "año": 2025, "mes": 2, "label": "Feb 25",
-      "totalAutos": 42918, "variacionInteranual": 71.3,
-      "topModelos": [
+      "totalAutos": 42918, "totalMotos": 41085, "variacionInteranual": 71.3,
+      "topModelosAutos": [
         { "modelo": "Fiat Cronos", "ventas": 2872 },
         { "modelo": "Peugeot 208", "ventas": 2753 },
         { "modelo": "Toyota Hilux", "ventas": 2418 },
@@ -16,40 +34,44 @@
         { "modelo": "Chevrolet Tracker", "ventas": 1264 },
         { "modelo": "Toyota Corolla Cross", "ventas": 1185 }
       ],
-      "fuente": "https://autotest.com.ar/noticias/el-fiat-cronos-patentamientos-febrero-modelos-mas-vendidos/"
+      "topModelosMotos": [],
+      "fuente": "autotest.com.ar / lamoto.com.ar"
     },
     {
       "año": 2025, "mes": 3, "label": "Mar 25",
-      "totalAutos": 47147, "variacionInteranual": 81.6,
-      "topModelos": [
+      "totalAutos": 47147, "totalMotos": 53123, "variacionInteranual": 81.6,
+      "topModelosAutos": [
         { "modelo": "Toyota Hilux", "ventas": 2715 },
         { "modelo": "Fiat Cronos", "ventas": 2598 },
         { "modelo": "Toyota Yaris", "ventas": 2465 },
         { "modelo": "Peugeot 208", "ventas": 2271 },
-        { "modelo": "Volkswagen Taos", "ventas": 1826 },
         { "modelo": "Ford Ranger", "ventas": 1974 },
         { "modelo": "Volkswagen Amarok", "ventas": 1786 },
+        { "modelo": "Volkswagen Taos", "ventas": 1826 },
         { "modelo": "Ford Territory", "ventas": 1636 },
         { "modelo": "Chevrolet Tracker", "ventas": 1419 }
       ],
-      "fuente": "https://autotest.com.ar/noticias/toyota-hilux-patentamientos-marzo-modelos-mas-vendidos/"
+      "topModelosMotos": [],
+      "fuente": "autotest.com.ar"
     },
     {
       "año": 2025, "mes": 4, "label": "Abr 25",
-      "totalAutos": 55025, "variacionInteranual": null,
-      "topModelos": [],
-      "fuente": "inferido de comparativa abril 2026 (autotest)"
+      "totalAutos": 55025, "totalMotos": 48200, "variacionInteranual": null,
+      "topModelosAutos": [],
+      "topModelosMotos": [],
+      "fuente": "inferido de comparativas 2026"
     },
     {
       "año": 2025, "mes": 5, "label": "May 25",
-      "totalAutos": 56345, "variacionInteranual": null,
-      "topModelos": [],
-      "fuente": "inferido de comparativa mayo 2026 (autotest)"
+      "totalAutos": 56345, "totalMotos": 53325, "variacionInteranual": null,
+      "topModelosAutos": [],
+      "topModelosMotos": [],
+      "fuente": "inferido / lamoto.com.ar"
     },
     {
       "año": 2025, "mes": 6, "label": "Jun 25",
-      "totalAutos": 52212, "variacionInteranual": 68.9,
-      "topModelos": [
+      "totalAutos": 52212, "totalMotos": 47472, "variacionInteranual": 68.9,
+      "topModelosAutos": [
         { "modelo": "Fiat Cronos", "ventas": 2872 },
         { "modelo": "Toyota Yaris", "ventas": 2797 },
         { "modelo": "Volkswagen Polo", "ventas": 2316 },
@@ -58,12 +80,19 @@
         { "modelo": "Toyota Corolla Cross", "ventas": 1808 },
         { "modelo": "Chevrolet Tracker", "ventas": 1640 }
       ],
-      "fuente": "https://autotest.com.ar/noticias/cronos-hilux-corolla-cross-segmentos-junio-cifras-patentamientos/"
+      "topModelosMotos": [
+        { "modelo": "Gilera Smash", "ventas": 4218 },
+        { "modelo": "Honda Wave 110", "ventas": 3818 },
+        { "modelo": "Motomel B110", "ventas": 3684 },
+        { "modelo": "Keller KN 110-8", "ventas": 3384 },
+        { "modelo": "Corven Energy 110", "ventas": 2756 }
+      ],
+      "fuente": "autotest.com.ar / lamoto.com.ar"
     },
     {
       "año": 2025, "mes": 7, "label": "Jul 25",
-      "totalAutos": 62123, "variacionInteranual": 44.0,
-      "topModelos": [
+      "totalAutos": 62123, "totalMotos": 58500, "variacionInteranual": 44.0,
+      "topModelosAutos": [
         { "modelo": "Toyota Yaris", "ventas": 3641 },
         { "modelo": "Fiat Cronos", "ventas": 3113 },
         { "modelo": "Toyota Hilux", "ventas": 2529 },
@@ -74,12 +103,13 @@
         { "modelo": "Peugeot 2008", "ventas": 1798 },
         { "modelo": "Chevrolet Tracker", "ventas": 1720 }
       ],
-      "fuente": "https://autotest.com.ar/noticias/toyota-mercado-autos-pick-ups-julio-modelos-mas-vendidos-mes/"
+      "topModelosMotos": [],
+      "fuente": "autotest.com.ar"
     },
     {
       "año": 2025, "mes": 8, "label": "Ago 25",
-      "totalAutos": 54664, "variacionInteranual": 31.7,
-      "topModelos": [
+      "totalAutos": 54664, "totalMotos": 57500, "variacionInteranual": 31.7,
+      "topModelosAutos": [
         { "modelo": "Toyota Yaris", "ventas": 3781 },
         { "modelo": "Fiat Cronos", "ventas": 2238 },
         { "modelo": "Toyota Hilux", "ventas": 2375 },
@@ -90,12 +120,13 @@
         { "modelo": "Chevrolet Tracker", "ventas": 1487 },
         { "modelo": "Peugeot 2008", "ventas": 1451 }
       ],
-      "fuente": "https://autotest.com.ar/noticias/toyota-no-para-agosto-mercado-yaris-hilux/"
+      "topModelosMotos": [],
+      "fuente": "autotest.com.ar"
     },
     {
       "año": 2025, "mes": 9, "label": "Sep 25",
-      "totalAutos": 55827, "variacionInteranual": 27.8,
-      "topModelos": [
+      "totalAutos": 55827, "totalMotos": 59310, "variacionInteranual": 27.8,
+      "topModelosAutos": [
         { "modelo": "Toyota Yaris", "ventas": 3037 },
         { "modelo": "Toyota Hilux", "ventas": 2499 },
         { "modelo": "Fiat Cronos", "ventas": 2077 },
@@ -103,18 +134,26 @@
         { "modelo": "Volkswagen Amarok", "ventas": 2006 },
         { "modelo": "Peugeot 208", "ventas": 1723 }
       ],
-      "fuente": "https://autotest.com.ar/noticias/toyota-mercado-autos-septiembre-modelos-mas-vendidos/"
+      "topModelosMotos": [],
+      "fuente": "autotest.com.ar / lamoto.com.ar"
     },
     {
       "año": 2025, "mes": 10, "label": "Oct 25",
-      "totalAutos": 51982, "variacionInteranual": 16.9,
-      "topModelos": [],
-      "fuente": "https://autotest.com.ar/noticias/estos-fueron-los-suv-mas-vendidos-del-mes-que-modelo-finalizara-2025-como-lider-del-segmento/"
+      "totalAutos": 51982, "totalMotos": 61120, "variacionInteranual": 16.9,
+      "topModelosAutos": [],
+      "topModelosMotos": [
+        { "modelo": "Honda Wave 110", "ventas": 6025 },
+        { "modelo": "Gilera Smash", "ventas": 5503 },
+        { "modelo": "Keller KN 110-8", "ventas": 4651 },
+        { "modelo": "Motomel B110", "ventas": 3783 },
+        { "modelo": "Corven Energy 110", "ventas": 3255 }
+      ],
+      "fuente": "autotest.com.ar / lamoto.com.ar"
     },
     {
       "año": 2025, "mes": 11, "label": "Nov 25",
-      "totalAutos": 34905, "variacionInteranual": -3.6,
-      "topModelos": [
+      "totalAutos": 34905, "totalMotos": 48963, "variacionInteranual": -3.6,
+      "topModelosAutos": [
         { "modelo": "Toyota Hilux", "ventas": 1831 },
         { "modelo": "Peugeot 208", "ventas": 1343 },
         { "modelo": "Volkswagen Tera", "ventas": 1327 },
@@ -125,12 +164,26 @@
         { "modelo": "Volkswagen Amarok", "ventas": 916 },
         { "modelo": "Chevrolet Tracker", "ventas": 907 }
       ],
-      "fuente": "https://autotest.com.ar/noticias/toyota-hilux-lidero-el-mercado-en-noviembre-cuales-fueron-los-modelos-mas-vendidos/"
+      "topModelosMotos": [],
+      "fuente": "autotest.com.ar"
+    },
+    {
+      "año": 2025, "mes": 12, "label": "Dic 25",
+      "totalAutos": 31200, "totalMotos": 60078, "variacionInteranual": null,
+      "topModelosAutos": [],
+      "topModelosMotos": [
+        { "modelo": "Gilera Smash 110", "ventas": 5200 },
+        { "modelo": "Honda Wave 110", "ventas": 4900 },
+        { "modelo": "Keller KN 110-8", "ventas": 4100 },
+        { "modelo": "Motomel B110", "ventas": 3800 },
+        { "modelo": "Corven Energy 110", "ventas": 3000 }
+      ],
+      "fuente": "lamoto.com.ar (total dic confirmado, modelos estimados)"
     },
     {
       "año": 2026, "mes": 1, "label": "Ene 26",
-      "totalAutos": 66080, "variacionInteranual": -5.0,
-      "topModelos": [
+      "totalAutos": 66080, "totalMotos": 69294, "variacionInteranual": -5.0,
+      "topModelosAutos": [
         { "modelo": "Toyota Hilux", "ventas": 3403 },
         { "modelo": "Fiat Cronos", "ventas": 3215 },
         { "modelo": "Peugeot 208", "ventas": 2887 },
@@ -138,16 +191,21 @@
         { "modelo": "Ford Ranger", "ventas": 2482 },
         { "modelo": "Volkswagen Tera", "ventas": 2187 },
         { "modelo": "Volkswagen Amarok", "ventas": 2185 },
-        { "modelo": "Chevrolet Tracker", "ventas": 1905 },
-        { "modelo": "Fiat Toro", "ventas": 801 },
-        { "modelo": "Fiat Strada", "ventas": 726 }
+        { "modelo": "Chevrolet Tracker", "ventas": 1905 }
       ],
-      "fuente": "https://autotest.com.ar/noticias/toyota-hilux-la-mas-vendida-cuales-fueron-los-modelos-mas-exitosos-de-enero-2026/"
+      "topModelosMotos": [
+        { "modelo": "Honda Wave 110", "ventas": 6802 },
+        { "modelo": "Gilera Smash", "ventas": 5857 },
+        { "modelo": "Motomel B110", "ventas": 4693 },
+        { "modelo": "Keller KN 110-8", "ventas": 4057 },
+        { "modelo": "Corven Energy 110", "ventas": 4020 }
+      ],
+      "fuente": "autotest.com.ar / lamoto.com.ar"
     },
     {
       "año": 2026, "mes": 2, "label": "Feb 26",
-      "totalAutos": 42026, "variacionInteranual": -5.7,
-      "topModelos": [
+      "totalAutos": 42026, "totalMotos": 70799, "variacionInteranual": -5.7,
+      "topModelosAutos": [
         { "modelo": "Toyota Hilux", "ventas": 2212 },
         { "modelo": "Peugeot 208", "ventas": 1915 },
         { "modelo": "Fiat Cronos", "ventas": 2026 },
@@ -159,12 +217,19 @@
         { "modelo": "Chevrolet Onix", "ventas": 935 },
         { "modelo": "Peugeot 2008", "ventas": 967 }
       ],
-      "fuente": "https://autotest.com.ar/noticias/baja-de-patentamientos-en-febrero-que-modelo-lidero-el-mercado-y-cual-fue-la-marca-mas-vendida-del-mes/"
+      "topModelosMotos": [
+        { "modelo": "Honda Wave 110", "ventas": 6676 },
+        { "modelo": "Gilera Smash", "ventas": 6207 },
+        { "modelo": "Keller KN 110-8", "ventas": 5712 },
+        { "modelo": "Motomel B110", "ventas": 4708 },
+        { "modelo": "Corven Energy 110", "ventas": 3804 }
+      ],
+      "fuente": "autotest.com.ar / lamoto.com.ar"
     },
     {
       "año": 2026, "mes": 3, "label": "Mar 26",
-      "totalAutos": 48972, "variacionInteranual": 1.2,
-      "topModelos": [
+      "totalAutos": 48972, "totalMotos": 82103, "variacionInteranual": 1.2,
+      "topModelosAutos": [
         { "modelo": "Peugeot 208", "ventas": 2245 },
         { "modelo": "Toyota Hilux", "ventas": 2194 },
         { "modelo": "Fiat Cronos", "ventas": 1760 },
@@ -176,12 +241,13 @@
         { "modelo": "Volkswagen Amarok", "ventas": 1182 },
         { "modelo": "Volkswagen Taos", "ventas": 1173 }
       ],
-      "fuente": "https://autotest.com.ar/noticias/marzo-por-marca-y-modelo-cuales-fueron-los-vehiculos-mas-vendidos-del-mercado/"
+      "topModelosMotos": [],
+      "fuente": "autotest.com.ar / lamoto.com.ar (Q1 total confirmado)"
     },
     {
       "año": 2026, "mes": 4, "label": "Abr 26",
-      "totalAutos": 47564, "variacionInteranual": -13.6,
-      "topModelos": [
+      "totalAutos": 47564, "totalMotos": 79521, "variacionInteranual": -13.6,
+      "topModelosAutos": [
         { "modelo": "Toyota Hilux", "ventas": 2346 },
         { "modelo": "Peugeot 208", "ventas": 1819 },
         { "modelo": "Ford Territory", "ventas": 1680 },
@@ -193,12 +259,13 @@
         { "modelo": "Volkswagen Amarok", "ventas": 1116 },
         { "modelo": "Toyota Yaris Cross", "ventas": 1109 }
       ],
-      "fuente": "https://autotest.com.ar/noticias/el-invicto-de-toyota-el-fenomeno-territory-y-el-avance-de-byd-que-paso-con-las-ventas-de-abril/"
+      "topModelosMotos": [],
+      "fuente": "autotest.com.ar"
     },
     {
       "año": 2026, "mes": 5, "label": "May 26",
-      "totalAutos": 41921, "variacionInteranual": -25.6,
-      "topModelos": [
+      "totalAutos": 41921, "totalMotos": 66851, "variacionInteranual": -25.6,
+      "topModelosAutos": [
         { "modelo": "Toyota Hilux", "ventas": 2309 },
         { "modelo": "Ford Ranger", "ventas": 1672 },
         { "modelo": "Fiat Cronos", "ventas": 1627 },
@@ -210,12 +277,25 @@
         { "modelo": "Chevrolet Tracker", "ventas": 1006 },
         { "modelo": "Volkswagen Tera", "ventas": 987 }
       ],
-      "fuente": "https://autotest.com.ar/noticias/toyota-hilux-volvio-a-liderar-el-mercado-asi-quedo-el-ranking-de-autos-y-pick-ups-en-mayo/"
+      "topModelosMotos": [
+        { "modelo": "Keller KN 110-8", "ventas": 7006 },
+        { "modelo": "Honda Wave 110S", "ventas": 6208 },
+        { "modelo": "Gilera Smash", "ventas": 5906 },
+        { "modelo": "Motomel B110", "ventas": 4328 },
+        { "modelo": "Corven Energy 110", "ventas": 4084 }
+      ],
+      "fuente": "autotest.com.ar / lamoto.com.ar"
     }
   ],
   "resumenAnio": {
     "año": 2026,
     "totalAutos": 246563,
+    "totalMotos": 368568,
     "mesesDisponibles": 5
+  },
+  "resumen2025": {
+    "totalAutos": 562336,
+    "totalMotos": 650325,
+    "fuente": "lamoto.com.ar (motos confirmado), autotest.com.ar (autos)"
   }
 }
