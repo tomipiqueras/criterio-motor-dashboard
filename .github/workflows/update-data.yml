@@ -2,11 +2,10 @@ name: Actualizar datos patentamientos
 
 on:
   # Día 5 de cada mes a las 13:00 UTC (10:00 Argentina)
-  # Infobae publica los datos de ACARA los primeros días del mes siguiente
   schedule:
     - cron: "0 13 5 * *"
 
-  # Ejecución manual desde GitHub (útil para forzar una actualización)
+  # Ejecución manual desde GitHub
   workflow_dispatch:
 
 jobs:
@@ -29,13 +28,13 @@ jobs:
       - name: Instalar Chromium para Puppeteer
         run: npx puppeteer browsers install chrome
 
-      - name: Scraping de datos
+      - name: Scraping de datos (autotest + lamoto)
         run: node scripts/scrape-data.mjs
 
       - name: Verificar si hubo cambios
         id: changes
         run: |
-          if git diff --quiet public/data/patentamientos.json 2>/dev/null || [ ! -f public/data/patentamientos.json ]; then
+          if git diff --quiet public/data/patentamientos.json 2>/dev/null; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -50,14 +49,26 @@ jobs:
           git commit -m "data: patentamientos $(date +'%Y-%m')"
           git push
 
+      - name: Subir JSON a Hostinger via FTP
+        if: steps.changes.outputs.changed == 'true'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          local-dir: public/data/
+          server-dir: /public_html/estadisticas/data/
+          exclude: |
+            **/.git*
+            **/acara.json
+
       - name: Resumen
         run: |
-          if [ -f public/data/patentamientos.json ]; then
-            node -e "
-              const d = JSON.parse(require('fs').readFileSync('public/data/patentamientos.json','utf8'));
-              console.log('Fuente:', d.source);
-              console.log('Meses total:', d.mensual.length);
-              console.log('Año actual:', d.anioActual);
-              console.log('Total autos:', d.resumenAnio.totalAutos.toLocaleString('es-AR'));
-            "
-          fi
+          node -e "
+            const d = JSON.parse(require('fs').readFileSync('public/data/patentamientos.json','utf8'));
+            console.log('Fuente:', d.source);
+            console.log('Meses total:', d.mensual.length);
+            console.log('Año actual:', d.anioActual);
+            console.log('Total autos:', d.resumenAnio.totalAutos.toLocaleString('es-AR'));
+            console.log('Total motos:', d.resumenAnio.totalMotos.toLocaleString('es-AR'));
+          "
