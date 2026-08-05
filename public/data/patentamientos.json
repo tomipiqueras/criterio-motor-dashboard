@@ -1,6 +1,6 @@
 {
   "source": "autotest-lamoto",
-  "fetchedAt": "2026-07-05T16:39:02.942Z",
+  "fetchedAt": "2026-08-05T15:07:59.028Z",
   "anioActual": 2026,
   "mensual": [
     {
@@ -372,7 +372,7 @@
           "ventas": 278
         }
       ],
-      "fuente": "autotest.com.ar / lamoto.com.ar / lamoto.com.ar / lamoto.com.ar"
+      "fuente": "autotest.com.ar / lamoto.com.ar / lamoto.com.ar / lamoto.com.ar / lamoto.com.ar"
     },
     {
       "año": 2025,
@@ -776,12 +776,46 @@
         }
       ],
       "fuente": "autotest.com.ar / lamoto.com.ar"
+    },
+    {
+      "año": 2026,
+      "mes": 7,
+      "label": "Jul 26",
+      "totalAutos": 43758,
+      "variacionInteranual": -30.3,
+      "topModelosAutos": [
+        {
+          "modelo": "Toyota volvió a liderar cómodamente con",
+          "ventas": 5244
+        },
+        {
+          "modelo": "Volkswagen completó el podio con",
+          "ventas": 2025
+        },
+        {
+          "modelo": "En el ranking de autos",
+          "ventas": 2026
+        },
+        {
+          "modelo": "La Toyota Hilux registró",
+          "ventas": 1768
+        },
+        {
+          "modelo": "La Ford Territory lideró con",
+          "ventas": 1199
+        },
+        {
+          "modelo": "El presidente de ACARA",
+          "ventas": 2026
+        }
+      ],
+      "fuente": "autotest.com.ar"
     }
   ],
   "resumenAnio": {
     "año": 2026,
-    "totalAutos": 222509,
+    "totalAutos": 266267,
     "totalMotos": 368568,
-    "mesesDisponibles": 5
+    "mesesDisponibles": 6
   }
 }
