@@ -1,6 +1,6 @@
 {
   "source": "autotest-lamoto",
-  "fetchedAt": "2026-08-05T15:07:59.028Z",
+  "fetchedAt": "2026-09-05T15:42:53.798Z",
   "anioActual": 2026,
   "mensual": [
     {
@@ -372,7 +372,7 @@
           "ventas": 278
         }
       ],
-      "fuente": "autotest.com.ar / lamoto.com.ar / lamoto.com.ar / lamoto.com.ar / lamoto.com.ar"
+      "fuente": "autotest.com.ar / lamoto.com.ar / lamoto.com.ar / lamoto.com.ar / lamoto.com.ar / lamoto.com.ar"
     },
     {
       "año": 2025,
@@ -810,12 +810,38 @@
         }
       ],
       "fuente": "autotest.com.ar"
+    },
+    {
+      "año": 2026,
+      "mes": 8,
+      "label": "Ago 26",
+      "totalAutos": 5973,
+      "variacionInteranual": null,
+      "topModelosAutos": [
+        {
+          "modelo": "Las marcas que forman parte de la cámara de importados",
+          "ventas": 5973
+        },
+        {
+          "modelo": "BYD volvió a encabezar el listado de marcas nucleadas en CIDOA",
+          "ventas": 1389
+        },
+        {
+          "modelo": "Chery completó el podio con 569",
+          "ventas": 417
+        },
+        {
+          "modelo": "Hyundai quedó cuarta",
+          "ventas": 443
+        }
+      ],
+      "fuente": "autotest.com.ar"
     }
   ],
   "resumenAnio": {
     "año": 2026,
-    "totalAutos": 266267,
+    "totalAutos": 272240,
     "totalMotos": 368568,
-    "mesesDisponibles": 6
+    "mesesDisponibles": 7
   }
 }
